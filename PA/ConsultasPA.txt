@@ -1,0 +1,10 @@
+1. Obtener los nombres de los estudiantes, los cursos a los que están inscritos y el profesor que imparte el curso.
+2.Queremos listar los cursos, ordenados por la fecha más reciente de clase, junto con el nombre del profesor.
+3. Obtener la lista de profesores que han impartido más de 3 clases, ordenada por el número de clases impartidas.
+4. Obtener la cantidad de estudiantes inscritos en cada curso y el profesor que imparte el curso.
+5. Obtener los cursos que contienen la palabra "programación" en su nombre o descripción, junto con el profesor que imparte la clase.
+6. Obtener la lista de estudiantes que tienen un correo que incluye "gmail" y que se inscribieron en el año 2023, junto con el curso al que están inscritos.
+7. Obtener los profesores que han impartido clases en un rango del año 2021 al 2023, junto con el curso que impartieron.
+8. Queremos obtener los cursos que tienen más de 5 estudiantes inscritos y que han sido impartidos por más de 1 profesor, mostrando el nombre del curso, el número de estudiantes inscritos y el número de profesores que lo han impartido.
+9. Queremos obtener los cursos en los que más de 3 estudiantes inscritos en el curso tienen una fecha de inscripción posterior al 1 de junio de 2023.
+10. Queremos obtener los cursos que tienen más de 5 estudiantes inscritos cuyos correos contienen "hotmail", con inscripciones en el año 2023.
