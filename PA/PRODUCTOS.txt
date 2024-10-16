@@ -1,0 +1,78 @@
+CREATE DATABASE PRODUCTO
+CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+ 
+ -- Tabla de Productos
+CREATE TABLE Productos (
+    ProductoID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Categoria VARCHAR(50),
+    Precio DECIMAL(10, 2),
+    Stock INT
+);
+
+-- Tabla de Clientes
+CREATE TABLE Clientes (
+    ClienteID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Email VARCHAR(100),
+    Telefono VARCHAR(20)
+);
+
+-- Tabla de Ventas
+CREATE TABLE Ventas (
+    VentaID INT PRIMARY KEY,
+    ClienteID INT,
+    Fecha DATE,
+    Total DECIMAL(10, 2),
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ClienteID)
+);
+
+-- Tabla de Detalles de Venta
+CREATE TABLE DetallesVenta (
+    DetalleID INT PRIMARY KEY,
+    VentaID INT,
+    ProductoID INT,
+    Cantidad INT,
+    PrecioUnitario DECIMAL(10, 2),
+    FOREIGN KEY (VentaID) REFERENCES Ventas(VentaID),
+    FOREIGN KEY (ProductoID) REFERENCES Productos(ProductoID)
+);
+
+-- Tabla de Proveedores
+CREATE TABLE Proveedores (
+    ProveedorID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Contacto VARCHAR(100),
+    Telefono VARCHAR(20)
+);
+
+-- Insertar algunos datos de ejemplo
+INSERT INTO Productos (ProductoID, Nombre, Categoria, Precio, Stock) VALUES
+(1, 'Smartphone X', 'Teléfonos', 599.99, 50),
+(2, 'Laptop Y', 'Computadoras', 999.99, 30),
+(3, 'Tablet Z', 'Tablets', 299.99, 40),
+(4, 'SmartTV 4K', 'Televisores', 799.99, 20),
+(5, 'Auriculares Bluetooth', 'Accesorios', 79.99, 100);
+
+INSERT INTO Clientes (ClienteID, Nombre, Email, Telefono) VALUES
+(1, 'Juan Pérez', 'juan@email.com', '123-456-7890'),
+(2, 'María García', 'maria@email.com', '098-765-4321'),
+(3, 'Carlos López', 'carlos@email.com', '111-222-3333');
+
+INSERT INTO Ventas (VentaID, ClienteID, Fecha, Total) VALUES
+(1, 1, '2024-01-15', 699.98),
+(2, 2, '2024-02-20', 1299.98),
+(3, 3, '2024-03-10', 379.98);
+
+INSERT INTO DetallesVenta (DetalleID, VentaID, ProductoID, Cantidad, PrecioUnitario) VALUES
+(1, 1, 1, 1, 599.99),
+(2, 1, 5, 1, 79.99),
+(3, 2, 2, 1, 999.99),
+(4, 2, 3, 1, 299.99),
+(5, 3, 3, 1, 299.99),
+(6, 3, 5, 1, 79.99);
+
+INSERT INTO Proveedores (ProveedorID, Nombre, Contacto, Telefono) VALUES
+(1, 'TechSupply Inc.', 'John Doe', '555-123-4567'),
+(2, 'ElectroWholesale', 'Jane Smith', '555-987-6543');

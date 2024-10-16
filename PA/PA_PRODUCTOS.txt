@@ -1,0 +1,5 @@
+1. PA que muestre los clientes que han realizado compras por un monto mayor al promedio de todas las ventas
+2. PA que muestre los productos con precio superior al promedio de su categoría
+3. PA que muestre los clientes que han realizado más de 3 compras con un promedio de gasto superior a $500
+4. PA que muestre las categorías de productos con más de 10 unidades vendidas y un precio promedio superior a $200
+5. PA que muestre los productos con precio inferior a la diferencia del producto con precio mas alto y el producto con precio mas bajos
