@@ -1,0 +1,12 @@
+1. Crea un procedimiento que reciba el ClienteID 
+y devuelva el total de ventas realizadas por ese cliente.
+2. Crea un procedimiento que reciba el ProductoID 
+y devuelva el nombre y precio del producto.
+3. Crea un procedimiento que reciba dos fechas 
+y devuelva el total de ventas realizadas en ese rango.
+4. Crea un procedimiento que devuelva el nombre de los 
+productos con mayor precio y con menor precio donde el stock este 
+por encima de un valor introducido por parametro.
+5. Crea un procedimiento que devuelva el promedio de ventas de un determinado producto.
+ 
+
