@@ -1,0 +1,6 @@
+1. Cree una función que devuelva el nombre del producto más caro dentro de la categoría especificada.
+2. Cree una función que devuelva la cantidad total en stock de todos los productos pertenecientes a esa categoría.
+3. Cree una función que devuelva la cantidad total vendida de un producto específico, sumando el campo Cantidad de DetallesVenta.
+4. Cree una función que devuelva el promedio de unidades compradas por parte de un cliente específico de un artículo determinado.
+Se introduce el nombre del cliente y el nombre del producto como argumentos.
+5. Cree una función que devuelva el número de clientes distintos que han comprado productos de una determinada categoría durante un año específico.
